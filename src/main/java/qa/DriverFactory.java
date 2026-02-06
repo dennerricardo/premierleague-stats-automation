@@ -22,10 +22,10 @@ public class DriverFactory {
     public WebDriver initDriver(String browserName){
         switch (browserName.toLowerCase()){
             case "chrome":
-//                ChromeOptions chromeOptions = new ChromeOptions();
-//                chromeOptions.addArguments("--headless");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("-headless");
+                tlDriver.set(new ChromeDriver(chromeOptions));
 //                tlDriver.set(new ChromeDriver());
-                tlDriver.set(new ChromeDriver());
                 break;
 
             case "firefox":
