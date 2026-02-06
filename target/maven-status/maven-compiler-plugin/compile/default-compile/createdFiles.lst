@@ -1,0 +1,3 @@
+pages\DashboardPage.class
+pages\Config_BasePage.class
+qa\DriverFactory.class

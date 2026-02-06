@@ -17,46 +17,40 @@ public class DashboardSteps {
     @Given("user navigates to the Premier League stats page")
     public void user_navigates_to_the_premier_league_stats_page() {
         dashboardPage.getCurrentUrl();
-
     }
 
     @And("user validates dashboard page title")
     public void user_validates_dashboard_page_title() {
-        System.out.println(dashboardPage.getTitle());
-        Assert.assertTrue(dashboardPage.getTitle().equals("Premier League Player Stats & Club Statistics"));
+//        System.out.println(dashboardPage.getTitle());
+        Assert.assertEquals(dashboardPage.getTitle(),"Premier League Player Stats & Club Statistics");
     }
 
     @When("the statistics dashboard is displayed")
     public void theStatisticsDashboardIsDisplayed() {
         Assert.assertTrue(dashboardPage.theStatisticsDashboardIsDisplayed());
-
     }
 
     @Then("the dashboard should show the Goals category")
     public void theDashboardShouldShowTheGoalsCategory() {
         Assert.assertTrue(dashboardPage.theDashboardShouldShowTheGoalsCategory());
-
-
     }
 
     @And("the dashboard should show the Assists category")
     public void theDashboardShouldShowTheAssistsCategory() {
         Assert.assertTrue(dashboardPage.theDashboardShouldShowTheAssistsCategory());
-
     }
 
     @And("the dashboard should show the Total Passes category")
     public void theDashboardShouldShowTheTotalPassesCategory() {
         Assert.assertTrue(dashboardPage.theDashboardShouldShowTheTotalPassesCategory());
-
-
     }
 
     @And("the dashboard should show the Clean Sheets category")
     public void theDashboardShouldShowTheCleanSheetsCategory() {
         Assert.assertTrue(dashboardPage.theDashboardShouldShowTheCleanSheetsCategory());
     }
-//
+
+
 //    @Then("a list of goals should be displayed")
 //    public void aListOfGoalsShouldBeDisplayed() {
 //

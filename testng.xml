@@ -1,12 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Suite1" verbose="4">
+<suite name="Suite - 1" verbose="4">
     <test name="GoalsStats">
-        <parameter name="browserName" value="chrome">
+        <parameter name="browserName" value="chrome"/>
             <classes>
                 <class name="runners.TestRunner"/>
             </classes>
-        </parameter>
     </test>
 
     <!--    <test name="Regression1">-->

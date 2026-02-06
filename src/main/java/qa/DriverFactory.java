@@ -43,7 +43,7 @@ public class DriverFactory {
                 tlDriver.set(new ChromeDriver());
                 break;
         }
-        System.out.println("DriverFactory getDriver");
+        System.out.println("DriverFactory: "+ browserName);
         return tlDriver.get();
     }
 
